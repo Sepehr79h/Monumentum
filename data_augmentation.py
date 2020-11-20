@@ -94,7 +94,7 @@ def create_augment_folder(set_path, dataset_path, set_dir):
             print(error)
 
         for i,image in enumerate(new_class_images):
-            plt.imsave(os.path.join(new_class_dir,str(i)+'.png'),image)
+            plt.imsave(os.path.join(new_class_dir,str(i)+'.jpg'),image)
 
 def create_augmented_folders():
     base = os.path.dirname(os.path.realpath(__file__))
